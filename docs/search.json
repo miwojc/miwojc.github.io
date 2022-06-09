@@ -1,24 +1,17 @@
 [
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/nvidia-smi-dmon/index.html",
+    "href": "posts/nvidia-smi-dmon/index.html",
+    "title": "nvidia-smi dmon",
     "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "nvidia-smi dmon\n\n# gpu   pwr gtemp mtemp    sm   mem   enc   dec  mclk  pclk\n# Idx     W     C     C     %     %     %     %   MHz   MHz\n    0   125    68     -   100    84     0     0  6800   510\n    0   124    68     -   100    84     0     0  6800   510\n    0   124    68     -   100    83     0     0  6800   510\n    0   124    68     -   100    83     0     0  6800   510\n    0   124    68     -   100    83     0     0  6800   525\n    0   124    68     -   100    84     0     0  6800   525\n    0   124    68     -   100    83     0     0  6800   510\n    0   125    68     -   100    84     0     0  6800   510\n    0   125    68     -   100    84     0     0  6800   510\n    0   125    68     -   100    83     0     0  6800   510\n    0   125    68     -   100    84     0     0  6800   525\n    0   125    68     -   100    83     0     0  6800   510\n    0   124    68     -   100    83     0     0  6800   510\n    0   124    68     -   100    83     0     0  6800   510\n    0   124    68     -   100    83     0     0  6800   510\n    0   124    68     -   100    84     0     0  6800   510\nWe can find out more by exectuing nvidia-smi dmon -h command.\nnvidia-smi dmon -h\n\n    GPU statistics are displayed in scrolling format with one line\n    per sampling interval. Metrics to be monitored can be adjusted\n    based on the width of terminal window. Monitoring is limited to\n    a maximum of 4 devices. If no devices are specified, then up to\n    first 4 supported devices under natural enumeration (starting\n    with GPU index 0) are used for monitoring purpose.\n    It is supported on Tesla, GRID, Quadro and limited GeForce products\n    for Kepler or newer GPUs under x64 and ppc64 bare metal Linux.\n\n    Usage: nvidia-smi dmon [options]\n\n    Options include:\n    [-i | --id]:          Comma separated Enumeration index, PCI bus ID or UUID\n    [-d | --delay]:       Collection delay/interval in seconds [default=1sec]\n    [-c | --count]:       Collect specified number of samples and exit\n    [-s | --select]:      One or more metrics [default=puc]\n                          Can be any of the following:\n                              p - Power Usage and Temperature\n                              u - Utilization\n                              c - Proc and Mem Clocks\n                              v - Power and Thermal Violations\n                              m - FB and Bar1 Memory\n                              e - ECC Errors and PCIe Replay errors\n                              t - PCIe Rx and Tx Throughput\n    [-o | --options]:     One or more from the following:\n                              D - Include Date (YYYYMMDD) in scrolling output\n                              T - Include Time (HH:MM:SS) in scrolling output\n    [-f | --filename]:    Log to a specified file, rather than to stdout\n    [-h | --help]:        Display help information"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "myblog",
     "section": "",
-    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJun 9, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 6, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "til\n\n\n\n\n\n\n\n\n\n\n\nJun 10, 2022\n\n\nmiwojc\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",

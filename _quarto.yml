@@ -5,6 +5,7 @@ project:
 website:
   title: "myblog"
   navbar:
+    background: primary
     right:
       - about.qmd
       - icon: github
@@ -14,6 +15,9 @@ website:
 format:
   html:
     theme: sketchy
+    # theme:
+    #   dark: darkly
+    #   light: flatly
     css: styles.css
 
 

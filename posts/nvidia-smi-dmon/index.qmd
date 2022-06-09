@@ -1,0 +1,68 @@
+---
+title: "nvidia-smi dmon"
+author: "miwojc"
+date: "2022-06-10"
+categories: [til]
+---
+
+Use `nvidia-smi dmon` to monitor nvidia gpu devices. It displays device stats in scrolling format.
+
+```bash
+nvidia-smi dmon
+
+# gpu   pwr gtemp mtemp    sm   mem   enc   dec  mclk  pclk
+# Idx     W     C     C     %     %     %     %   MHz   MHz
+    0   125    68     -   100    84     0     0  6800   510
+    0   124    68     -   100    84     0     0  6800   510
+    0   124    68     -   100    83     0     0  6800   510
+    0   124    68     -   100    83     0     0  6800   510
+    0   124    68     -   100    83     0     0  6800   525
+    0   124    68     -   100    84     0     0  6800   525
+    0   124    68     -   100    83     0     0  6800   510
+    0   125    68     -   100    84     0     0  6800   510
+    0   125    68     -   100    84     0     0  6800   510
+    0   125    68     -   100    83     0     0  6800   510
+    0   125    68     -   100    84     0     0  6800   525
+    0   125    68     -   100    83     0     0  6800   510
+    0   124    68     -   100    83     0     0  6800   510
+    0   124    68     -   100    83     0     0  6800   510
+    0   124    68     -   100    83     0     0  6800   510
+    0   124    68     -   100    84     0     0  6800   510
+```
+
+We can find out more by exectuing `nvidia-smi dmon -h` command.
+
+```bash
+nvidia-smi dmon -h
+
+    GPU statistics are displayed in scrolling format with one line
+    per sampling interval. Metrics to be monitored can be adjusted
+    based on the width of terminal window. Monitoring is limited to
+    a maximum of 4 devices. If no devices are specified, then up to
+    first 4 supported devices under natural enumeration (starting
+    with GPU index 0) are used for monitoring purpose.
+    It is supported on Tesla, GRID, Quadro and limited GeForce products
+    for Kepler or newer GPUs under x64 and ppc64 bare metal Linux.
+
+    Usage: nvidia-smi dmon [options]
+
+    Options include:
+    [-i | --id]:          Comma separated Enumeration index, PCI bus ID or UUID
+    [-d | --delay]:       Collection delay/interval in seconds [default=1sec]
+    [-c | --count]:       Collect specified number of samples and exit
+    [-s | --select]:      One or more metrics [default=puc]
+                          Can be any of the following:
+                              p - Power Usage and Temperature
+                              u - Utilization
+                              c - Proc and Mem Clocks
+                              v - Power and Thermal Violations
+                              m - FB and Bar1 Memory
+                              e - ECC Errors and PCIe Replay errors
+                              t - PCIe Rx and Tx Throughput
+    [-o | --options]:     One or more from the following:
+                              D - Include Date (YYYYMMDD) in scrolling output
+                              T - Include Time (HH:MM:SS) in scrolling output
+    [-f | --filename]:    Log to a specified file, rather than to stdout
+    [-h | --help]:        Display help information
+```
+
