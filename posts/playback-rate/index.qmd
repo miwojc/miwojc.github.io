@@ -1,0 +1,18 @@
+---
+title: "playbackRate"
+author: "miwojc"
+date: "2022-07-12"
+categories: [til]
+---
+
+Use web developer tools and console to speed up videos that don't support native playback speed adjustement.  
+  
+* Open web developer tools  
+Firefox: `Settings` -> `More Tools` -> `Web Developer Tools` and select `Console` tab  
+or press <kbd>Cmd</kbd> <kbd>Opt</kbd> <kbd>K</kbd> on Mac  
+  
+* Type `document.querySelector("video").playbackRate=2`  
+  
+* Hit <kbd>Enter</kbd>  
+
+* Close developer tools

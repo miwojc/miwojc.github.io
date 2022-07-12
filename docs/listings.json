@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/playback-rate/index.html",
       "/posts/nvidia-smi-dmon/index.html"
     ]
   }

@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "myblog",
     "section": "",
-    "text": "til\n\n\n\n\n\n\n\n\n\n\n\nJun 10, 2022\n\n\nmiwojc\n\n\n\n\n\n\nNo matching items"
+    "text": "til\n\n\n\n\n\n\n\n\n\n\n\nJul 12, 2022\n\n\nmiwojc\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ntil\n\n\n\n\n\n\n\n\n\n\n\nJun 10, 2022\n\n\nmiwojc\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -19,5 +19,12 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "posts/playback-rate/index.html",
+    "href": "posts/playback-rate/index.html",
+    "title": "playbackRate",
+    "section": "",
+    "text": "Open web developer tools\nFirefox: Settings -> More Tools -> Web Developer Tools and select Console tab\nor press Cmd Opt K on Mac\nType document.querySelector(\"video\").playbackRate=2\nHit Enter\nClose developer tools"
   }
 ]
